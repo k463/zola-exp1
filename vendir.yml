@@ -1,0 +1,10 @@
+apiVersion: vendir.k14s.io/v1alpha1
+kind: Config
+directories:
+  - path: themes/zola-grayscale
+    contents:
+      - path: .
+        git:
+          url: "https://github.com/mattimustang/zola-grayscale"
+          ref: main
+          depth: 1

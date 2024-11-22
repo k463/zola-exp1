@@ -17,7 +17,10 @@
             zola
           ];
           # packages needed at runtime for running software in this repo
-          packages = with pkgs; [];
+          packages = with pkgs; [
+            mask
+            vendir
+          ];
         };
       };
     };

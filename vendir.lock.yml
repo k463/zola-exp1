@@ -1,0 +1,9 @@
+apiVersion: vendir.k14s.io/v1alpha1
+directories:
+- contents:
+  - git:
+      commitTitle: add empty custom.css
+      sha: 7b931c6be69ab478c23605f53221bec2d3cf47e5
+    path: .
+  path: themes/zola-grayscale
+kind: LockConfig
