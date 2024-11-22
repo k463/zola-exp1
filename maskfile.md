@@ -18,7 +18,7 @@ theme_dir="themes/zola-grayscale"
 vendir sync
 rm -rf "${theme_dir}/.git"
 
-if git diff --quiet; then
+if [[ -z $(git status --porcelain "${theme_dir}/") ]]; then
   echo "No changes" >&2
   exit 0
 fi
